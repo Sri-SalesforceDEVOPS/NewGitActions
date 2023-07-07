@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>gsrikanthdeveloper@gmail.com</contactEmail>
+    <label>mysampleapp</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIDjjCCAnYCCQCf0ZakaqytnjANBgkqhkiG9w0BAQsFADCBiDELMAkGA1UEBhMCVUsxCzAJBgNVBAgTAlVLMQswCQYDVQQHEwJVazESMBAGA1UEChMJTXljb21wYW55MQ8wDQYDVQQLEwZNeVVuaXQxETAPBgNVBAMTCHNyaWthbnRoMScwJQYJKoZIhvcNAQkBFhhzcmlrYW50aC5nQGF1dG9yYWJpdC5jb20wHhcNMjIwODA4MjExNzUzWhcNMjMwODA4MjExNzUzWjCBiDELMAkGA1UEBhMCVUsxCzAJBgNVBAgTAlVLMQswCQYDVQQHEwJVazESMBAGA1UEChMJTXljb21wYW55MQ8wDQYDVQQLEwZNeVVuaXQxETAPBgNVBAMTCHNyaWthbnRoMScwJQYJKoZIhvcNAQkBFhhzcmlrYW50aC5nQGF1dG9yYWJpdC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCrtHTNyyxA73pqPr7H/ea0f8licAqoqE8HzvNRjhnCpjnMlLUD21jrr646GyqnEq63T6OjiLEiMwlzbDcXo42pXWWQa6tW+3UKJQLTUdmC+tS4rDXMNEc3Jr0ImE2/07n5LHdwuC2AV9PlXkzF0FwFRTnVFxxbysjADBJGeIoUWxuP4hBeT34JuwoTW/rXDcoCPPmVrGOqDGjL0j+BHW3gcMImTMU2RMbvtNtUfR7d3dV66Jwzq5o8kj3tjZ1fkJ03gqH1o6ggxEXNApsjF9vxjCUJNiTCeqaFPQtdrztcEKPWbCC0vzmOVQQTo49LyX3+74e45rQdj74v9D20pQJRAgMBAAEwDQYJKoZIhvcNAQELBQADggEBABKB+CC7UAgeWK7hFSLO4gpkNvN2SMlB8jldSA1v6w4pRYLIIIDmlClBSDkiULO4Nv40MDJTMpWkda1BAHvUmDpuFWm1kcrWgBJo1zPMFrv5fRKQLpNVG1oOnVkLlD4yLxBgNBt5NTGRINtGYNMrKiEALuRi6Q3MVDflZXGuAXxaugows79Vt8r9lKZfdu8DLSQJJSiX2rnNiBStG4OQW9g8hANkztHlHHEZr4sRaVEsrPj5LQeASm3btkpluui4CUqmyhKvy+TBWoDEdtifFl9FXa33/qhqh9wGdOrSzasA04eSbihrESQN+GE5yiv664hECmStiDPrZtcGOByRzqI=</certificate>
+        <consumerKey>3MVG97quAmFZJfVwhZB16ILVxMSpz.wsCsSyMmX2a3qacPtRQD_nv4EzKWdK6bvz0Gwt3B3e.l2w6Tx7_dFwH</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>Chatter</scopes>
+        <scopes>CustomApplications</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+        <scopes>CustomPermissions</scopes>
+        <scopes>Wave</scopes>
+        <scopes>Eclair</scopes>
+        <scopes>Pardot</scopes>
+        <scopes>Lightning</scopes>
+        <scopes>Content</scopes>
+        <scopes>CDPIngest</scopes>
+        <scopes>CDPProfile</scopes>
+        <scopes>CDPQuery</scopes>
+        <scopes>Chatbot</scopes>
+        <scopes>CDPSegment</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

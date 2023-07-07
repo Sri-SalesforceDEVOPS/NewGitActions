@@ -1,0 +1,51 @@
+Public class Casehelper{
+// NEW HEXA FETAURE TEST
+//HEXA COMMIT 2
+//new testttt
+    public static Boolean runOnce = true;
+    list<case> caselist = new list<case>();
+    set<id> CaseId=new set<id>();
+    
+    public void onAfterUpdate(list<case> Caslist){
+    string s;
+    integer i;
+            Casehelper.runOnce = true;
+            
+         system.debug('Caslist>>>'+ Caslist);    
+            system.debug('Caslist>>>1'+ Caslist);    
+            system.debug('Caslist>>>2'+ Caslist);    
+            system.debug('Caslist>>>3'+ Caslist);
+             system.debug('Caslist>>>5'+ Caslist);     
+    for(Case cas:Caslist){
+          if(Cas!=null){
+            CaseId.add(Cas.Id);
+        }
+        system.debug('CaseId'+ CaseId);
+    }
+            
+     if(CaseId != null){
+     
+         caselist = [SELECT Id,Description,experience__c,sales_areas_are_you_experienced_in__c,education_you_have_completed__c FROM Case WHERE Id =:CaseId]; 
+     }
+     system.debug('Caslist>>>4'+ Caslist);    
+            system.debug('Caslist>>>5'+ Caslist);    
+            system.debug('Caslist>>>3'+ Caslist); 
+     system.debug('caselist'+ caselist);
+    /*
+    
+       
+    for(Case Cas: [SELECT Id,Description,experience__c,sales_areas_are_you_experienced_in__c,education_you_have_completed__c FROM Case WHERE Id in: Trigger.new]){
+         system.debug('Exper1'+ Cas.experience__c);
+        if(Cas != null && Cas.Description != null){
+           Cas.experience__c = '10';
+           caselist.add(Cas);
+           recursive = true;
+
+        }
+       system.debug('Exper2'+ Cas.experience__c);
+    }
+    
+    update caselist;
+     system.debug('Exper2'+ caselist);*/
+}
+}

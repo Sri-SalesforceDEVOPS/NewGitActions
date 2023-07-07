@@ -1,0 +1,4 @@
+<aura:component access="global" implements="flexipage:availableForAllPageTypes">
+    <lightning:container src="{!$Resource.Angular + '/dist/csv-convertor/index.html'}"/>
+   TESTING
+</aura:component>

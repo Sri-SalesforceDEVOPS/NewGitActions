@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "Overpass-Regular";
+	src: url($font-path + "Overpass/Overpass-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Overpass-SemiBold";
+	src: url($font-path + "Overpass/Overpass-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Overpass-Bold";
+	src: url($font-path + "Overpass/Overpass-Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Overpass-ExtraBold";
+	src: url($font-path + "Overpass/Overpass-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Overpass-Black";
+	src: url($font-path + "Overpass/Overpass-Black.ttf") format("truetype");
+}
+
+/*@font-face{
+    font-family: "Overpass-BlackItalic";
+    src: url($font-path+"/Overpass/Overpass-BlackItalic.ttf") format("truetype");
+  }*/
+
+@font-face {
+	font-family: "ar-icons";
+	src: url($font-path + "ar-icons.eot?7810l0");
+	src: url($font-path + "ar-icons.eot?7810l0#iefix") format("embedded-opentype"),
+		url($font-path + "ar-icons.woff2?7810l0") format("woff2"),
+		url($font-path + "ar-icons.ttf?7810l0") format("truetype"),
+		url($font-path + "ar-icons.woff?7810l0") format("woff"),
+		url($font-path + "ar-icons.svg?7810l0#ar-icons") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+i,
+em {
+	&[class^="ar-"],
+	&[class*=" ar-"] {
+		/* use !important to prevent issues with browser extensions that change fonts */
+		font-family: "ar-icons" !important;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}

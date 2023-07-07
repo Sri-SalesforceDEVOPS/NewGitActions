@@ -1,4 +1,4 @@
-//testing
+
 public class AccountHandler {
 public accounthandler(){}
 public static Account insertNewAccount()
